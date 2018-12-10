@@ -1,0 +1,20 @@
+{% extends 'eco_app/base.html' %}
+
+{% block content %}
+
+<div id="category-header">
+  <h2>CATÁLOGO</h2>
+  <h3>Edición 2019</h3>
+</div>
+<div class="category-list">
+  {% for category in categories %}
+<div class="cat-thumb">
+  <a href="{% url 'categories_detail' pk=category.pk %}">
+    <img id="cat-thumb" src="{{category.thumb}}"></img>
+    <p class="cat-title">{{category.name}}</p>
+  </a>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}

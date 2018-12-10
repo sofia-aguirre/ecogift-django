@@ -1,0 +1,116 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ecogift | Merchandising Corporativo | Regalos Empresariales </title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Sofia Aguirre (c) 2018">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="head-left">
+          <a href="mailto:ecogiftargentina@gmail.com"><i class="far fa-envelope"></i></a>
+        <a href="mailto:ecogiftargentina@gmail.com">ecogiftargentina@gmail.com</a>
+        <div class="head-phone">
+            <a href="tel:+54-11-2006-6581"><i class="fas fa-phone"></i></a>
+          <a href="tel:+54-11-2006-6581">+54 11 2006 6581</a>
+        </div>
+      </div>
+      <div class="head-right">
+        <div class="head-social-icons">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <a href="./"><img src="../../static/static_assets/Screen Shot 2018-11-15 at 4.16.03 PM.png" title="Ecogift, Fabrica de Merchandising" alt="Logo de Ecogift"></a>
+      <ul>
+        <li><a href="./">INICIO</a></li>
+        <li><a href="./catalogo">CATÁLOGO</a></li>
+        <li><a href="/index.html">EMPRESA</a></li>
+        <li><a href="/index.html">SERVICIOS</a></li>
+        <li><a href="/index.html">CONTACTO</a></li>
+      </ul>
+      <div id="searchbar">
+        <input placeholder="ingrese búsqueda">
+        <button>LUPA</button>
+      </div>
+    </nav>
+    <div class="block-content">
+      {% block content %}
+      
+      {% endblock %}
+  </div>
+    <footer>
+      <div id="ft-sitemap">
+        <h4>ECOGIFT</h4>
+        <ul id="ft-nav">
+          <li><a href="./">Inicio</a></li>
+          <li><a href="./catalogo">Catálogo</a></li>
+          <li><a href="/index.html">Empresa</a></li>
+          <li><a href="/index.html">Servicios</a></li>
+          <li><a href="/index.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div id="ft-categories">
+        <h4>PRODUCTOS</h4>
+          <ul>
+            <li><a href="#">Agendas / Bitácoras</a></li>
+            <li><a href="#">Billeteras / Porta Vouchers</a></li>
+            <li><a href="#">Bolsos / Morrales / Carteras</a></li>
+            <li><a href="#">Etiquetas / Badanas</a></li>
+            <li><a href="#">Llaveros Publicitarios</a></li>
+            <li><a href="#">Neceser / Estuches</a></li>  
+            <li><a href="#">Oficina / Escritorio</a></li>
+            <li><a href="#">Proyectos Personalizados</a></li>
+            <li><a href="#">Set de Asado / Camping</a></li>
+            <li><a href="#">Set Matero / Mates</a></li>
+            <li><a href="#">Tags de Viaje / Identificadores</a></li>
+            <li><a href="#">Vinoteca / Restaurant</a></li>
+          </ul>
+        </div>
+      <div id="ft-social-links">
+        <h4>NUESTRAS REDES</h4>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+      <div id="ft-contact">
+        <a href="./"><img src="../../static/static_assets/Screen Shot 2018-11-15 at 4.16.03 PM.png" title="Ecogift, Fabrica de Merchandising" alt="Logo de Ecogift"></a>
+        <p>Cnel. Niceto Vega 1001</p>
+        <p>Ituzaingo, Prov. Buenos Aires</p>
+        <a href="tel:+54-11-2006-6581"><i class="fas fa-phone"></i></a>
+          <a href="tel:+54-11-2006-6581">+54 11 2006 6581</a>
+        <p><a href="mailto:ecogiftargentina@gmail.com"><i class="far fa-envelope"></i></a>
+          <a href="mailto:ecogiftargentina@gmail.com"> ecogiftargentina@gmail.com</a></p>
+        <p><a href="/index.html">www.ecogift.com.ar</a></p>
+      </div>
+    </footer>
+
+    <script src="" async defer></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<!-- <script type="text/javascript" src="./app/instafeed.min.js"></script>
+<script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script> -->
+<script type="text/javascript" src="./app/main.js"></script>
+  </body>
+</html>

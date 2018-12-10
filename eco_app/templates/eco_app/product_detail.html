@@ -1,0 +1,42 @@
+{% extends 'eco_app/base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="user-detail-container">
+    <div class="user-info-container">
+        <h1>{{custom_user.full_name}}</h1> 
+        <p>{% if user.username == request.user.username%}
+        <a href="{% url 'user_edit' pk=user.pk %}">Edit your profile</a>
+        {% endif %}</p>
+        <img src="{{ custom_user.profile_pic.url }}" width=200px height=auto/>
+
+    <p>Contact phone: {{custom_user.contact_phone}}</p> 
+    <p>Contact email: {{custom_user.contact_email}}</p> 
+</div>
+
+<div class="user-venues-managed-container">
+    <h3>Venues Managed</h3>
+    {% if user.username == request.user.username%}
+        <a href="{% url 'venue_create' %}"><h4>(Pssst, {{user.username}} - click here to CREATE a venue)</h4></a>
+    {% endif %}
+    <ul>
+    {% for venue in venues %}
+        {% if user.pk == venue.manager.pk %}
+            <li>
+                <a href={% url 'venue_detail' pk=venue.pk %}>{{ venue.title }} </a> ({{ venue.location}})
+                {% if user.username == request.user.username %}
+                <a href={% url 'venue_edit' pk=venue.pk %}>(edit)</a>
+                <a href={% url 'venue_delete' pk=venue.pk %}>(delete)</a>
+                {% endif %}
+            </li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+</div>
+</div>
+{% endblock %}
+
+<!-- will implement this later -->
+{% if user.username == request.user.username%}
+    <a href="{% url 'user_delete' pk=user.pk %}">DELETE YOURSELF (handle are you sure? this will delete all your venues)</a>
+{% endif %}
