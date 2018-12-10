@@ -15,6 +15,4 @@ urlpatterns = [
     # product views
     # path('products/<int:pk>', views.product_detail, name='product_detail'),
     
-]
-# put this guy right next to the above bracket
-# + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -10,7 +10,7 @@
   {% for category in categories %}
 <div class="cat-thumb">
   <a href="{% url 'categories_detail' pk=category.pk %}">
-    <img id="cat-thumb" src="{{category.thumb}}"></img>
+    <img id="cat-thumb" src="{{ MEDIA_URL }}{{ category.thumb.url }}"></img>
     <p class="cat-title">{{category.name}}</p>
   </a>
   </div>
