@@ -2,6 +2,20 @@
 
 {% block content %}
 
-category detail sanity
+<div id="category-header">
+  <h2>{{category.name}}</h2>
+</div>
+<div class="category-list">
+    {% for product in products %}
+<div class="cat-thumb">
+  <a href="{% url 'categories_detail' pk=category.pk %}">
+    <img id="cat-thumb" src="{{ MEDIA_URL }}{{ product.pic1.url }}"></img>
+    <p class="prod-model">{{product.model}}</p>
+    <p class="prod-name">{{product.name}}</p>
+  </a>
+  </div>
+  {% endfor %}
+</div>
+
 
 {% endblock %}

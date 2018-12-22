@@ -18,6 +18,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_DIR = os.path.join(BASE_DIR,'eco_app/templates')
 STATIC_DIR = os.path.join(BASE_DIR,'eco_app/static')
 MEDIA_DIR = os.path.join(BASE_DIR,'category_thumbnails')
+# PROD_DIR = os.path.join(BASE_DIR,'product_pics')
 
 
 # Quick-start development settings - unsuitable for production
@@ -126,3 +127,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_ROOT = '/Users/macbook/Projects/Ecogift-New/ecogift-django/'
 MEDIA_URL = '/category_thumbnails/'
+# PROD_URL = '/product_pics/'
