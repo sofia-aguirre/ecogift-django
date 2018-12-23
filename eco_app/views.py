@@ -14,7 +14,7 @@ def categories_list(request):
 
 def category_detail(request, pk):
     category = Category.objects.get(id=pk)
-    products = Product.objects.all()
+    products = Product.objects.filter(category__exact=category)
     # get(name=category.name)
     return render(request, 'eco_app/categories_detail.html', {'category': category,
     'products':products
