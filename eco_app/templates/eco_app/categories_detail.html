@@ -11,7 +11,7 @@
   <a href="{% url 'categories_detail' pk=category.pk %}">
     <img id="cat-thumb" src="{{ MEDIA_URL }}{{ product.pic1.url }}"></img>
     <p class="prod-model">{{product.model}}</p>
-    <p class="prod-name">{{product.name}}</p>
+    <!-- <p class="prod-name">{{product.name}}</p> -->
   </a>
   </div>
   {% endfor %}
