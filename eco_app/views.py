@@ -30,6 +30,6 @@ def category_detail(request, pk):
 #     categories = Category.objects.all()
 #     return render(request, 'eco_app/product_list.html', {'products': products, 'categories': categories})
 
-# def product_detail(request, pk):
-#     product = Product.objects.get(id=pk)
-#     return render(request, 'eco_app/product_detail.html', {'product': product})
+def product_detail(request, pk):
+    product = Product.objects.get(id=pk)
+    return render(request, 'eco_app/product_detail.html', {'product': product})
