@@ -2,37 +2,51 @@
 {% load staticfiles %}
 {% block content %}
 
-<p>{{product.category}}</p>
-<p>{{product.name}}</p>
-<p>{{product.model}}</p>
-<p>{{product.description}}</p>
+<div id="category-header">
+    <h2><a href="{% url 'categories_detail' pk=product.category.pk %}">{{product.category}}</a></h2>
+</div>
 
-<div class="cat-thumb">
-    <img id="cat-thumb" src="{{ MEDIA_URL }}{{ product.pic1.url }}"></img>
+<div id="prod-deet-pg"> 
+<div id="prod-deet-left">
+<div class="prod-img-side">
+    <img class="prod-img" src="{{ MEDIA_URL }}{{ product.pic1.url }}"></img>
 </div>
 
 {% if product.pic2 %}
-<div class="cat-thumb">
-    <img id="cat-thumb" src="{{ MEDIA_URL }}{{ product.pic2.url }}"></img>
+<div class="prod-img-side">
+    <img class="prod-img" src="{{ MEDIA_URL }}{{ product.pic2.url }}"></img>
 </div>
 {% else %}
 <p> </p>
 {% endif %}
 
 {% if product.pic3 %}
-<div class="cat-thumb">
-    <img id="cat-thumb" src="{{ MEDIA_URL }}{{ product.pic3.url }}"></img>
+<div class="prod-img-side">
+    <img class="prod-img" src="{{ MEDIA_URL }}{{ product.pic3.url }}"></img>
 </div>
 {% else %}
 <p> </p>
 {% endif %}
 
 {% if product.pic4 %}
-<div class="cat-thumb">
-    <img id="cat-thumb" src="{{ MEDIA_URL }}{{ product.pic4.url }}"></img>
+<div class="prod-img-side">
+    <img class="prod-img" src="{{ MEDIA_URL }}{{ product.pic4.url }}"></img>
 </div>
 {% else %}
 <p> </p>
 {% endif %}
+</div>
+
+<div id="prod-deet-center">
+    <img id="prod-zoom" src="{{ MEDIA_URL }}{{ product.pic1.url }}"></img>
+</div>
+
+<div id="prod-deet-right">
+    <h3>{{product.model}}</h3>
+    <h4>{{product.name}}</h4>
+    <p id="desc-head">Descripción:</p>
+    <p id="desc-body">{{product.description}}</p>
+</div>
+</div>
 
 {% endblock %}
