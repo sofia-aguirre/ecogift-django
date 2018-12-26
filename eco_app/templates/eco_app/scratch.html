@@ -1,76 +1,124 @@
-<div class="category-list">
-  <div class="cat-thumb">
-    <a href="{% url 'categories_detail' pk=category.pk %}">
-      <div id="cat-thumb-1"></div>
-      <p class="cat-title">Agendas / Bitácoras {{category.name}}</p>
-    </a>
+<div id="carousel-wrapper">
+    <div id="carousel-overlay">
+      <h2>Artículos Publicitarios</h2>
+      <h4>Regalos Empresariales</h4>
+      <h4>Merchandising Corporativo</h4>
     </div>
-    <div class="cat-thumb">
-    <a href="{% url 'categories_detail' pk=category.pk %}">
-      <div id="cat-thumb-2"></div>
-      <p class="cat-title">Billeteras / Porta Vouchers {{category.name}}</p>
-    </a>
     </div>
-  <div class="cat-thumb">
-    <a href="#">
-      <div id="cat-thumb-3"></div>
-      <p class="cat-title">Bolsos / Morrales / Carteras</p>
-    </a> 
-    </div>
-  <div class="cat-thumb">
-    <a href="#">
-      <div id="cat-thumb-4"></div>
-      <p class="cat-title">Etiquetas / Badanas</p>
-    </a>
-    </div>
-  <div class="cat-thumb">
-    <a href="#">
-      <div id="cat-thumb-5"></div>
-      <p class="cat-title">Llaveros Publicitarios</p>
-    </a>
-    </div>
-  <div class="cat-thumb">
-    <a href="#">
-      <div id="cat-thumb-6"></div>
-      <p class="cat-title">Neceser / Estuches</p>
-    </a> 
-    </div>
-  <div class="cat-thumb">
-    <a href="#">
-      <div id="cat-thumb-7"></div>
-      <p class="cat-title">Oficina / Escritorio</p>
-    </a>
-    </div>
-  <div class="cat-thumb">
-    <a href="#">
-      <div id="cat-thumb-8"></div>
-      <p class="cat-title">Proyectos Personalizados</p>
-    </a>
-    </div>
-  <div class="cat-thumb">
-    <a href="#">
-      <div id="cat-thumb-9"></div>
-      <p class="cat-title">Set de Asado / Camping</p>
-    </a> 
-    </div>
-  <div class="cat-thumb">
-    <a href="#">
-      <div id="cat-thumb-10"></div>
-      <p class="cat-title">Set Matero / Mates</p>
-    </a> 
-    </div>
-  <div class="cat-thumb">
-    <a href="#">
-      <div id="cat-thumb-11"></div>
-      <p class="cat-title">Tags de Viaje / Identificadores</p>
-    </a> 
-    </div>
-  <div class="cat-thumb">
-    <a href="#">
-      <div id="cat-thumb-12"></div>
-      <p class="cat-title">Vinoteca / Restaurant</p>
-    </a> 
-    </div>
-  
 
 
+    {% extends 'eco_app/base.html' %}
+
+    {% block content %}
+    
+    <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="../../static/static_assets/Ecogift-Fabrica-Regalos-Empresariales-Ecogift-Argentina-Merchandising-Publicitario-Corporativo-articulos-Precentes-Obsequios-Banner-1.jpg.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="../../static/static_assets/Ecogift-Fabrica-Regalos-Empresariales-Ecogift-Argentina-Merchandising-Publicitario-Corporativo-articulos-Precentes-Obsequios-Banner-2.jpg.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="../../static/static_assets/Ecogift-Fabrica-Regalos-Empresariales-Ecogift-Argentina-Merchandising-Publicitario-Corporativo-articulos-Precentes-Obsequios-Banner-3.jpg.jpg" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="../../static/static_assets/Ecogift-Fabrica-Regalos-Empresariales-Ecogift-Argentina-Merchandising-Publicitario-Corporativo-articulos-Precentes-Obsequios-Banner-4.jpg.jpg" alt="Fourth slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="../../static/static_assets/Ecogift-Fabrica-Regalos-Empresariales-Ecogift-Argentina-Merchandising-Publicitario-Corporativo-articulos-Precentes-Obsequios-Banner-5.jpg.jpg" alt="Fifth slide">
+        </div>
+      </div>
+    </div>
+    <div id="main-container">
+    <aside>
+      <h4>Productos</h4>
+      <ul id="aside-categories-list">
+        <li><a href="/catalogo/1">Agendas / Bitácoras</a></li>
+        <li><a href="/catalogo/2">Billeteras / Porta Vouchers</a></li>
+        <li><a href="/catalogo/3">Bolsos / Morrales / Carteras</a></li>
+        <li><a href="/catalogo/4">Etiquetas / Badanas</a></li>
+        <li><a href="/catalogo/5">Llaveros Publicitarios</a></li>
+        <li><a href="/catalogo/6">Neceser / Estuches</a></li>
+        <li><a href="/catalogo/7">Oficina / Escritorio</a></li>
+        <li><a href="/catalogo/8">Proyectos Personalizados</a></li>
+        <li><a href="/catalogo/9">Set de Asado / Camping</a></li>
+        <li><a href="/catalogo/10">Set Matero / Mates</a></li>
+        <li><a href="/catalogo/11">Tags de Viaje / Identificadores</a></li>
+        <li><a href="/catalogo/12">Vinoteca / Restaurant</a></li>
+      </ul>
+    </aside>
+    <main>
+      <div class="item">
+        <a href="/catalogo/2">
+          <div id="item-thumb-1"></div>
+          <p class="item-number">Art. 102</p>
+          <p class="item-title">Billetera de cuero para dama</p>
+        </a>
+        </div>
+        <div class="item">
+        <a href="/catalogo/9">
+          <div id="item-thumb-2"></div>
+          <p class="item-number">Art. 1834</p>
+          <p class="item-title">Set de asado completo de simil cuero</p>
+        </a>
+        </div>
+      <div class="item">
+        <a href="/catalogo/11">
+          <div id="item-thumb-3"></div>
+          <p class="item-number">Art. 1150</p>
+          <p class="item-title">Tag identificador de cuero para valijas</p>
+        </a> 
+        </div>
+      <div class="item">
+        <a href="/catalogo/4">
+          <div id="item-thumb-4"></div>
+          <p class="item-number">Art. 11900</p>
+          <p class="item-title">Etiqueta personalizada de cuero o simil cuero</p>
+        </a>
+        </div>
+      <div class="item">
+        <a href="/catalogo/2">
+          <div id="item-thumb-5"></div>
+          <p class="item-number">Art. 123-C</p>
+          <p class="item-title">Billetera de cuero estilo Lumberjack</p>
+        </a>
+        </div>
+      <div class="item">
+        <a href="/catalogo/12">
+          <div id="item-thumb-6"></div>
+          <p class="item-number">Art. 1700</p>
+          <p class="item-title">Servidor set de vino de cuero personalizado</p>
+        </a> 
+        </div>
+      <div class="item">
+        <a href="/catalogo/7">
+          <div id="item-thumb-7"></div>
+          <p class="item-number">Art. 1793-B</p>
+          <p class="item-title">Porta celular/holder de cuero</p>
+        </a>
+        </div>
+      <div class="item">
+        <a href="/catalogo/1">
+          <div id="item-thumb-8"></div>
+          <p class="item-number">Art. 1800</p>
+          <p class="item-title">Agenda de cuero</p>
+        </a>
+        </div>
+      <div class="item">
+        <a href="/catalogo/6">
+          <div id="item-thumb-9"></div>
+          <p class="item-number">Art. 11074-H</p>
+          <p class="item-title">Neceser unisex de cuero</p>
+        </a> 
+        </div>
+    </main>
+    </div>
+    <div id="map">
+    <a href="https://goo.gl/maps/WW7cSWhZ1LF2"><img src="../../static/static_assets/ecogift-domicilio.png"></a>
+    </div>
+    <div id="instafeed">
+      <iframe src="//lightwidget.com/widgets/26efe7f84faf5a65b6060749b25fde71.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+    </div>
+    
+    {% endblock %}
