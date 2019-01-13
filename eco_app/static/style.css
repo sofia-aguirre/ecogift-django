@@ -520,3 +520,27 @@ footer h4 {
 #desc-body {
   font-size: 1.11em;
 }
+
+/* ---- SERVICES PAGE ---- */
+#services-page {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#services-page h4 {
+  text-align: center;
+  color: #5ab500;
+}
+
+#services-page p {
+  width: 80%;
+  font-size: 1.1em;
+}
+
+#services-page ul {
+  list-style-type: disc;
+  margin-bottom: 30px;
+}

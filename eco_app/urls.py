@@ -8,6 +8,9 @@ urlpatterns = [
     # landing page
     path('',views.landing, name='landing'),
 
+    # services views
+    path('servicios',views.services, name='services'),
+
     # category views
     path('catalogo', views.categories_list, name='categories_list'),
     path('catalogo/<int:pk>', views.category_detail, name='categories_detail'),

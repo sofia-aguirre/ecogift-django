@@ -7,6 +7,10 @@ from .models import Category, Product
 def landing(request):
     return render(request, 'eco_app/landing.html')
 
+# SERVICES PAGE
+def services(request):
+    return render(request, 'eco_app/services.html')
+
 # CATEGORY READ FUNCTIONS
 def categories_list(request):
     categories = Category.objects.all()
