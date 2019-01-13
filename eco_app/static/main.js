@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-var carHi= $('#carousel').css('height');
-$('#carousel-overlay').css('height', carHi);
+// var carHi= $('#carousel').css('height');
+// $('#carousel-overlay').css('height', carHi);
 
 $('.prod-img').mouseover(function(){
   var imgSrc= $(this).attr('src');
