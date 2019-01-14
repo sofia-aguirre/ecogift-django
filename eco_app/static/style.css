@@ -581,12 +581,11 @@ footer h4 {
   .head-phone {
     margin-left: 5vw;
   }
-  #instafeed {
-    height: 100px;
-  }
-}
 
-@media only screen and (max-width:600px) {
+  #instafeed {
+    height: 150px;
+  }
+
   #main-container {
     display: flex;
     flex-wrap: wrap;
@@ -636,14 +635,32 @@ footer h4 {
     height: 100px;
   }
 
-  #ft-categories, #ft-sitemap, #ft-social-links {
+  #ft-sitemap {
     display: none;
+  }
+
+  #ft-categories, #ft-social-links {
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+
+  #ft-categories h4, #ft-social-links h4 {
+    border: none;
+    color: #5ab500;
+  }
+
+  #ft-categories ul {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: space-around;
   }
 
   footer {
     display: block;
     padding: 20px 0 20px 0;
-    margin: 0px;
+    margin: 5vh 0 0 0;
     height: auto;
   }
 
@@ -660,6 +677,67 @@ footer h4 {
   #ft-contact img {
     width: 50%;
     margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .head-left {
+    margin: 0;
+  }
+
+  .head-right {
+    display: none;
+  }
+
+  nav {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  #nav-logo {
+    width: 100vw;
+    margin-bottom: 7vw;
+  }
+
+  nav ul {
+    align-self: center;
+  }
+
+  .carousel-item img {
+    max-height: 20vh;
+  }
+
+  #carousel-overlay h2 {
+    margin-top: 15px;
+  }
+
+  #carousel-overlay h2, #carousel-overlay h4 {
+    font-size: 1.3em;
+  }
+
+  #aside-categories-list {
+    display: flex;
+    flex-flow: column;
+  }
+
+  main {
+    flex-flow: column;
+  }
+
+  .item {
+    width: 90%;
+  }
+
+  #map, #instafeed {
+    display: none;
   }
 
 }
