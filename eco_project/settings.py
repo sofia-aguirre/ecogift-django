@@ -25,10 +25,10 @@ MEDIA_DIR = os.path.join(BASE_DIR,'category_thumbnails')
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'lqj=z5dr*114h!gm-$=$uh9#t)mr+hd^!^f+rz!0boiq$mz_sb'
+SECRET_KEY = '50423thu1hfpfadf]h1jd\df=+1fh0ah31ra/df;aas'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
