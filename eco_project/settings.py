@@ -130,5 +130,11 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = '/Users/macbook/Projects/Ecogift-New/ecogift-django/'
 MEDIA_URL = '/category_thumbnails/'
 # PROD_URL = '/product_pics/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,'eco_app/static'),
+    STATIC_URL,
+    MEDIA_ROOT,
+    MEDIA_URL
+]
 
 django_heroku.settings(locals())
