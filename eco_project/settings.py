@@ -125,16 +125,19 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATIC_URL = '/static/'
 MEDIA_ROOT = '/Users/macbook/Projects/Ecogift-New/ecogift-django/'
 MEDIA_URL = '/category_thumbnails/'
 # PROD_URL = '/product_pics/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'eco_app/static'),
+    os.path.join(PROJECT_ROOT,'static'),
     STATIC_URL,
     MEDIA_ROOT,
     MEDIA_URL
 ]
+
 
 django_heroku.settings(locals())
