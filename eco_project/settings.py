@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,7 +26,7 @@ MEDIA_DIR = os.path.join(BASE_DIR,'category_thumbnails')
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '50423thu1hfpfadf]h1jd\df=+1fh0ah31ra/df;aas'
+SECRET_KEY = '50423thu1hfpfadfzh1jd2df=+1fh0ah31ra22dfaas'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -54,6 +55,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'eco_project.urls'
@@ -128,3 +130,5 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = '/Users/macbook/Projects/Ecogift-New/ecogift-django/'
 MEDIA_URL = '/category_thumbnails/'
 # PROD_URL = '/product_pics/'
+
+django_heroku.settings(locals())
