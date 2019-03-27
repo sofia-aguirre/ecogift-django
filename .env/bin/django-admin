@@ -1,5 +1,4 @@
 #!/Users/macbook/Projects/Ecogift-New/ecogift-django/.env/bin/python3.7
-
 # -*- coding: utf-8 -*-
 import re
 import sys
