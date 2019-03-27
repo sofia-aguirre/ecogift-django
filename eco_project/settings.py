@@ -134,9 +134,9 @@ MEDIA_URL = '/category_thumbnails/'
 # PROD_URL = '/product_pics/'
 STATICFILES_DIRS = [
     os.path.join(PROJECT_ROOT,'static'),
-    STATIC_URL,
-    MEDIA_ROOT,
-    MEDIA_URL
+    # STATIC_URL,
+    # MEDIA_ROOT,
+    # MEDIA_URL
 ]
 
 
