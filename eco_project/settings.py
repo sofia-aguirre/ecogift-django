@@ -126,7 +126,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = [
+    os.path.join(BASE_DIR, 'category_thumbnails'),
+    os.path.join(BASE_DIR, 'product_pics')
+]
 
 STATIC_URL = '/static/'
 MEDIA_ROOT = '/Users/macbook/Projects/Ecogift-New/ecogift-django/'
